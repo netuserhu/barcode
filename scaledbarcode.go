@@ -112,7 +112,7 @@ func scale1DCode(bc Barcode, width, height int) (Barcode, error) {
 	if factor <= 0 {
 		return nil, fmt.Errorf("can not scale barcode to an image smaller than %dx1", orgWidth)
 	}
-	width = (orgWidth * factor) + 2
+	//width = (orgWidth * factor) + 2
 	offsetX := 1
 
 	wrap := func(x, y int) color.Color {
