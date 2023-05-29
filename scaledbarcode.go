@@ -121,7 +121,7 @@ func scale1DCode(bc Barcode, width, height int) (Barcode, error) {
 		}
 		//x = (x - offsetX) / factor
 
-		if x >= orgWidth {
+		if x >= width {
 			return color.White
 		}
 		return bc.At(x, 0)
